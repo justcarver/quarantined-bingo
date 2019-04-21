@@ -25,7 +25,6 @@ export default {
 <style scoped>
 .bingo-card {
   max-width: 75%;
-  margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

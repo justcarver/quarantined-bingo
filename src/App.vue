@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <BingoCard :items="cardData"/>
+    <Rules />
   </div>
 </template>
 
 <script>
 import BingoCard from './components/BingoCard.vue';
+import Rules from './components/Rules.vue';
+
 const potentialSquares = [
   `Someone yells "Nick!"`,
   `VooDoo is unsure if he'll be in raid`,
@@ -43,29 +46,36 @@ const potentialSquares = [
   `Someone was muted and didn't realize it`,
   `Debate on who drops a cauldron`,
   `"Does someone have an extra flask?"`,
-]
+  `Someone face/ass pulls a boss`,
+  `"That's what she said!"`,
+  `Someone has forgotten seals after a boss has been killed`,
+  `Someone demands silence in voice chat`,
+  `Slurred Words in chat`,
+  `Too Lazy to Release`,
+];
 
-function randomCard () {
+function randomCard() {
   const tempArray = [];
   const optionsArray = potentialSquares;
   for (let i = 0; i < 24; i += 1) {
     const item = optionsArray.splice(Math.floor(Math.random() * optionsArray.length), 1);
     tempArray.push(item[0]);
   }
-  tempArray.splice(12, 0, "FREE!");
-  tempArray.unshift('B','I','N','G','O');
+  tempArray.splice(12, 0, `FREE!`);
+  tempArray.unshift(`B`, `I`, `N`, `G`, `O`);
   return tempArray;
 }
 
 export default {
-  name: 'app',
+  name: `app`,
   components: {
     BingoCard,
+    Rules,
   },
   data: function () {
     return {
       cardData: randomCard(),
-    }
+    };
   },
 };
 </script>
