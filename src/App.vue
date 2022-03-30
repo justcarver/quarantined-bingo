@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <BingoCard :items="cardData"/>
+    <BingoCard :items="cardData" />
     <Rules />
   </div>
 </template>
 
 <script>
-import BingoCard from './components/BingoCard.vue';
-import Rules from './components/Rules.vue';
+import BingoCard from "./components/BingoCard.vue";
+import Rules from "./components/Rules.vue";
 
 const potentialSquares = [
   `Someone yells at family member or roommate who isn't playing`,
@@ -28,7 +28,7 @@ const potentialSquares = [
   `Someone shouts "Don't jinx us!"`,
   `Ready Check to Ready Check`,
   `We have no feasts`,
-  `Wipe at lest that 5%`,
+  `Wipe at less that 5%`,
   `B-Rez used on someone who immediate dies again`,
   `Face Pull`,
   `Transmog Emergency!`,
@@ -50,11 +50,11 @@ const potentialSquares = [
   `Someone demands their slut mog be inspected/judged`,
   `Someone starts singing`,
   `Multiple Feasts are dropped at the same time`,
-  `"This if fine!"`,
+  `"This is fine!"`,
   `"Come on <insert tank>, only <insert damage> left!!!"`,
   `Keyboard Sounds in voice chat`,
   `Someone starts reexplaining a fight after first explanation`,
-  `Dog/Baby Shennigans`,
+  `Dog/Baby Shenanigans`,
   `Someone saying gib tier`,
   `"I wasn't standing in that!"`,
   `"Can't stop won't stop"`,
@@ -92,5 +92,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

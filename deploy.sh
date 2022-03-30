@@ -16,6 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f https://github.com/justcarver/quarantined-bingo.git master:gh-pages
+git push -f git@github.com:justcarver/quarantined-bingo.git main:gh-page
 
 cd -
