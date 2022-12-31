@@ -12,9 +12,9 @@
     "vue": "^2.6.6"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.5",
-    "@vue/cli-plugin-eslint": "^3.0.5",
-    "@vue/cli-service": "^3.6.0",
+    "@vue/cli-plugin-babel": "^3.5.5",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-airbnb": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
